@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Meme {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  title           String
+  shortDefinition String
+  origin          String
+  platform        String
+  firstSeen       String
+  growthPattern   String
+  culturalMeaning String
+  brainrotScore   Int
+  lifecyclePhase  String
+  imageUrl        String?
+  category        String   @default("Meme")
+  isApproved      Boolean  @default(true)
+  upvotes         Int      @default(0)
+  downvotes       Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  tags            Tag[]    @relation("MemeTags")
+  
+  // For SQLite simplicity, we'll store related meme slugs as a comma-separated string
+  relatedMemes    String   @default("")
+}
+
+model VideoAnalysis {
+  id              String   @id @default(uuid())
+  videoUrl        String
+  translation     String
+  explanation     String?
+  brainrotScore   Int
+  characters      String[] // Array of recognized characters
+  themes          String[] // Array of recognized themes
+  identifiedTerms String[] // Array of detected slang
+  createdAt       DateTime @default(now())
+}
+
+model Tag {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  memes     Meme[]   @relation("MemeTags")
+}
