@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function EditorialSection() {
     return (
-        <section id="about" className="py-32 relative overflow-hidden bg-coral border-b-8 border-black">
+        <section id="about" className="py-32 relative overflow-hidden bg-coral border-b-8 border-black w-full max-w-[100vw]">
             <div className="container mx-auto px-4 max-w-6xl">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

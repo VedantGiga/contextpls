@@ -38,10 +38,10 @@ const timelinePhases = [
 
 export default function LifecycleTimeline() {
     return (
-        <section className="py-24 relative bg-skyblue border-b-8 border-black">
+        <section className="py-24 relative bg-skyblue border-b-8 border-black w-full max-w-[100vw]">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-24">
-                    <h2 className="text-5xl md:text-6xl lg:text-8xl font-display font-black mb-6 text-black uppercase tracking-tighter" style={{ textShadow: '8px 8px 0px #FF5429' }}>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black mb-6 text-black uppercase tracking-tighter break-words" style={{ textShadow: '4px 4px 0px #FF5429' }}>
                         THE MEME LIFECYCLE
                     </h2>
                     <p className="text-xl md:text-2xl text-black font-bold max-w-2xl mx-auto bg-sage border-4 border-black p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] uppercase">
