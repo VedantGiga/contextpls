@@ -21,7 +21,7 @@ export default function TrendingCarousel() {
     }, []);
 
     return (
-        <section id="trending" className="py-24 relative overflow-hidden bg-white border-b-8 border-black">
+        <section id="trending" className="py-24 relative overflow-hidden w-full max-w-[100vw] bg-white border-b-8 border-black">
             <div className="container mx-auto px-4 mb-12">
                 <div className="flex items-end justify-between">
                     <div>

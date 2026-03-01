@@ -16,7 +16,7 @@ const categories = [
 
 export default function CategoryGrid({ dbCounts = {} }: { dbCounts?: Record<string, number> }) {
     return (
-        <section id="categories" className="py-24 relative bg-white border-b-8 border-black">
+        <section id="categories" className="py-24 relative overflow-hidden w-full max-w-[100vw] bg-white border-b-8 border-black">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-end justify-between mb-12">
                     <div>

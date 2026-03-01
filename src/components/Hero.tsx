@@ -20,7 +20,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-sage pt-20 border-b-8 border-black">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full max-w-[100vw] bg-sage pt-20 border-b-8 border-black">
 
             {/* Top Marquee */}
             <div className="absolute top-24 left-0 w-full overflow-hidden bg-coral border-y-4 border-black py-2 z-0 transform -rotate-2 scale-110">

@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased bg-background text-foreground overflow-x-hidden max-w-[100vw] w-full`}
+        className={`${inter.variable} ${outfit.variable} antialiased bg-background text-foreground w-full`}
         suppressHydrationWarning
       >
         <SmoothScroll>

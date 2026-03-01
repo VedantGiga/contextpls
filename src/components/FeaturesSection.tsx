@@ -42,7 +42,7 @@ const features = [
 
 export default function FeaturesSection() {
     return (
-        <section className="py-24 px-4 bg-black border-y-8 border-white font-mono relative overflow-hidden">
+        <section className="py-24 px-4 bg-black border-y-8 border-white font-mono relative overflow-hidden w-full max-w-[100vw]">
             <div className="container mx-auto max-w-7xl relative z-10">
                 <div className="mb-16 md:mb-24 flex justify-between items-end border-b-8 border-white pb-6">
                     <div>

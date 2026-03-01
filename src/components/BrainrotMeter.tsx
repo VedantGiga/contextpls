@@ -43,7 +43,7 @@ export default function BrainrotMeter() {
     const [hoveredLevel, setHoveredLevel] = useState<number | null>(null);
 
     return (
-        <section className="py-24 relative bg-white border-b-8 border-black">
+        <section className="py-24 relative overflow-hidden w-full max-w-[100vw] bg-white border-b-8 border-black">
             <div className="container mx-auto px-4">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-16">
