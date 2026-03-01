@@ -10,8 +10,8 @@ export default async function CharactersPage() {
             <div className="container mx-auto">
                 <div className="mb-16 border-8 border-black bg-white p-8 md:p-12 shadow-[16px_16px_0px_0px_rgba(0,0,0,1)]">
                     <h1
-                        className="text-5xl md:text-7xl lg:text-9xl font-black text-black uppercase leading-none tracking-tighter"
-                        style={{ textShadow: "8px 8px 0px #FF5429" }}
+                        className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black text-black uppercase leading-none tracking-tighter break-words"
+                        style={{ textShadow: "4px 4px 0px #FF5429" }}
                     >
                         MEME <br className="hidden md:block" /> CHARACTERS
                     </h1>

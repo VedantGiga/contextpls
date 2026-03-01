@@ -28,13 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased bg-background text-foreground`}
+        className={`${inter.variable} ${outfit.variable} antialiased bg-background text-foreground overflow-x-hidden max-w-[100vw] w-full`}
         suppressHydrationWarning
       >
-        <SmoothScroll>
-          <Navbar />
-          {children}
-        </SmoothScroll>
+        <div className="overflow-x-hidden w-full max-w-[100vw] min-h-screen">
+          <SmoothScroll>
+            <Navbar />
+            {children}
+          </SmoothScroll>
+        </div>
       </body>
     </html>
   );

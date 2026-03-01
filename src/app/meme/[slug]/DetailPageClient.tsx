@@ -86,8 +86,8 @@ export default function DetailPageClient({ meme }: { meme: any }) {
                     </div>
 
                     <motion.h1
-                        className="text-5xl md:text-7xl lg:text-9xl font-display font-black text-black uppercase mb-8 tracking-tighter leading-none"
-                        style={{ textShadow: '8px 8px 0px #FF007F' }}
+                        className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-black uppercase mb-8 tracking-tighter leading-none break-words"
+                        style={{ textShadow: '4px 4px 0px #FF007F' }}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.4 }}
@@ -217,7 +217,7 @@ export default function DetailPageClient({ meme }: { meme: any }) {
                             </h3>
                             <div className="flex flex-wrap gap-3 mb-10">
                                 {meme.tags?.map((tag: any) => (
-                                    <span key={tag.id || tag} className="px-4 py-2 font-black text-black uppercase bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-sage hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+                                    <span key={tag.id || tag} className="max-w-full break-words px-4 py-2 font-black text-black uppercase bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-sage hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
                                         #{tag.name || tag}
                                     </span>
                                 ))}

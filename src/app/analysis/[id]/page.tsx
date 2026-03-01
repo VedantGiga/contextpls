@@ -82,7 +82,7 @@ export default async function VideoAnalysisPage({ params }: { params: Promise<{ 
                                 </h3>
                                 <div className="flex flex-wrap gap-2 sm:gap-3">
                                     {result.characters?.map((c: string, i: number) => (
-                                        <span key={i} className="px-4 sm:px-5 py-2 bg-white text-black border-4 border-black text-base sm:text-lg font-bold uppercase hover:bg-black hover:text-white cursor-default transition-colors">{c}</span>
+                                        <span key={i} className="max-w-full break-words px-4 sm:px-5 py-2 bg-white text-black border-4 border-black text-base sm:text-lg font-bold uppercase hover:bg-black hover:text-white cursor-default transition-colors">{c}</span>
                                     ))}
                                 </div>
                             </div>
