@@ -45,7 +45,9 @@ export default function SlangClientGrid({ initialMemes }: { initialMemes: any[] 
             {filteredMemes.length === 0 && (
                 <div className="col-span-full py-24 text-center">
                     <h2 className="text-3xl md:text-4xl font-black uppercase text-black bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] inline-block px-8 py-4 -rotate-2">
-                        NO RESULTS FOR "{searchQuery}"
+                        {searchQuery.trim() === ""
+                            ? "NO MEMES FOUND"
+                            : `NO RESULTS FOR "${searchQuery}"`}
                     </h2>
                 </div>
             )}

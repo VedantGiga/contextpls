@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Hero from "@/components/Hero";
 import TrendingCarousel from "@/components/TrendingCarousel";
 import BrainrotMeter from "@/components/BrainrotMeter";

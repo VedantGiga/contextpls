@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getMemesByCategory } from "@/lib/actions";
 import SlangClientGrid from "@/components/SlangClientGrid";
 
